@@ -40,7 +40,11 @@
                 <li><a href="">CONTACT US</a></li>
             </ul>
             <button onclick="showdiv()" class="clsbtn" id="clsbtn">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#5f6368">
+                    <path
+                        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                </svg>
             </button>
         </div>
         <button onclick="showDiv()" class="menubtn" id="menubtn">
@@ -49,32 +53,42 @@
             </svg>
         </button>
         <button onclick="showdiv()" class="clsbtn" id="clsbtn">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                <path
+                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+            </svg>
         </button>
+    </div>
+    <div class="slideshow">
+        <div class="slides"><img src="frontphoto.jpg" style="width:100%" alt="Image 1"></div>
+        <div class="slides"><img src="weddinghall.jpg" style="width:100%" alt="Image 2"></div>
+        <div class="slides"><img src="dininghall.webp" style="width:100%" alt="Image 3"></div>
+        <div class="slides"><img src="Stage.jpg" style="width:100%" alt="Image 4"></div>
+        <div class="slides"><img src="frontphoto.jpg" style="width:100%" alt="Image 5"></div>
     </div>
 </body>
 
 <script>
-    function showDiv() { 
-        var div = document.getElementById("sidebar"); 
+    function showDiv() {
+        var div = document.getElementById("sidebar");
         var btn = document.getElementById("menubtn");
-        btn.style.display= "none";
+        btn.style.display = "none";
         div.style.display = "flex";
         div.style.flexDirection = "coloumn";
         div.style.justifyContent = "space-between";
         div.style.alignItems = "center";
-        var cls=document.getElementById("clsbtn");
-        cls.style.display="block";
+        var cls = document.getElementById("clsbtn");
+        cls.style.display = "block";
 
     }
-    function showdiv() { 
+    function showdiv() {
         var div = document.getElementById("sidebar");
-        div.style.display="none";
+        div.style.display = "none";
         var btn = document.getElementById("menubtn");
-        btn.style.display="block";
+        btn.style.display = "block";
         var cls = document.getElementById("clsbtn");
-        cls.stlye.display="none";
-        
+        cls.stlye.display = "none";
     }
 </script>
+
 </html>
